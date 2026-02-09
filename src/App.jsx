@@ -2,6 +2,7 @@ import StatCard from "./components/StatCard";
 import SalesChart from "./components/SalesChart";
 
 import { FaUsers, FaShoppingCart, FaRupeeSign } from "react-icons/fa";
+import UserTable from "./components/UserTable";
 
 function App() {
   return (
@@ -55,6 +56,9 @@ function App() {
 
           {/* Sales Chart */}
           <SalesChart />
+
+          {/* User Table */}
+          <UserTable />
         </div>
       </div>
     </div>
