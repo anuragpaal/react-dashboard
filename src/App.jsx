@@ -1,4 +1,7 @@
 import StatCard from "./components/StatCard";
+import SalesChart from "./components/SalesChart";
+
+import { FaUsers, FaShoppingCart, FaRupeeSign } from "react-icons/fa";
 
 function App() {
   return (
@@ -41,6 +44,7 @@ function App() {
         <div className="p-6 bg-gray-100 flex-1">
           <h3 className="text-2xl font-bold mb-6">Dashboard Content</h3>
 
+          {/* Stats Cards */}
           <div className="grid grid-cols-3 gap-5 mb-10">
             <StatCard title="Users" value="1,245" icon={<FaUsers />} />
 
@@ -48,6 +52,9 @@ function App() {
 
             <StatCard title="Revenue" value="₹45,000" icon={<FaRupeeSign />} />
           </div>
+
+          {/* Sales Chart */}
+          <SalesChart />
         </div>
       </div>
     </div>
